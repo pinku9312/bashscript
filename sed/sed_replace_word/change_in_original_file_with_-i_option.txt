@@ -1,0 +1,1 @@
+sed -i 's/root/network/g' samle.txt

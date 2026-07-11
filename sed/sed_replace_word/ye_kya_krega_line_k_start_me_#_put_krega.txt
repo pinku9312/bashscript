@@ -1,0 +1,1 @@
+sed '5s/^ mean start of line/#/' sample.txt 

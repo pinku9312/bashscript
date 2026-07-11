@@ -1,0 +1,1 @@
+sed -n '1p,5p;21,25p;28,30p' passwdoutput.txt 

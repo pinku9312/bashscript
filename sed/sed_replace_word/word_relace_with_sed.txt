@@ -1,0 +1,1 @@
+sed 's/from this word/to this word/g-globally' samle.txt 

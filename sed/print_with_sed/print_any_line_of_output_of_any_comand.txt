@@ -1,0 +1,1 @@
+lscpu |cat -n |sed -n ';11,15p'

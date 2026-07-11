@@ -1,0 +1,55 @@
+root:x:0:0:root:/root:/bin/bash
+jyoti:x:1002:1002:jyoti:/home/jyoti:/bin/bash
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/spool/mail:/sbin/nologin
+operator:x:11:0:operator:/root:/sbin/nologin
+games:x:12:100:games:/usr/games:/sbin/nologin
+ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin
+nobody:x:65534:65534:Kernel Overflow User:/:/sbin/nologin
+systemd-coredump:x:999:997:systemd Core Dumper:/:/sbin/nologin
+dbus:x:81:81:System message bus:/:/sbin/nologin
+polkitd:x:998:996:User for polkitd:/:/sbin/nologin
+tss:x:59:59:Account used for TPM access:/:/sbin/nologin
+sssd:x:997:995:User for sssd:/:/sbin/nologin
+sshd:x:74:74:Privilege-separated SSH:/usr/share/empty.sshd:/usr/sbin/nologin
+chrony:x:996:994:chrony system user:/var/lib/chrony:/sbin/nologin
+datamigration:x:1000:1000::/Data_Migration/:/bin/bash
+rpc:x:32:32:Rpcbind Daemon:/var/lib/rpcbind:/sbin/nologin
+rpcuser:x:29:29:RPC Service User:/var/lib/nfs:/sbin/nologin
+unbound:x:995:992:Unbound DNS resolver:/var/lib/unbound:/sbin/nologin
+hacluster:x:189:189:cluster user:/var/lib/pacemaker:/sbin/nologin
+rtkit:x:172:172:RealtimeKit:/:/sbin/nologin
+pipewire:x:994:991:PipeWire System Daemon:/run/pipewire:/usr/sbin/nologin
+geoclue:x:993:990:User for geoclue:/var/lib/geoclue:/sbin/nologin
+flatpak:x:992:989:Flatpak system helper:/:/usr/sbin/nologin
+pinku:x:1001:1001::/home/pinku:/bin/bash
+cockpit-ws:x:991:988:User for cockpit web service:/nonexisting:/sbin/nologin
+dnsmasq:x:990:986:Dnsmasq DHCP and DNS server:/var/lib/dnsmasq:/usr/sbin/nologin
+stapunpriv:x:159:159:systemtap unprivileged user:/var/lib/stapunpriv:/sbin/nologin
+qemu:x:107:107:qemu user:/:/sbin/nologin
+libvirtdbus:x:989:985:Libvirt D-Bus bridge:/:/sbin/nologin
+jyoti:x:1002:1002:jyoti:/home/jyoti:/bin/bash
+postgres:x:26:26:PostgreSQL Server:/var/lib/pgsql:/bin/bash
+smbuser:x:1003:1003::/home/smbuser:/sbin/nologin
+grafana:x:988:983:Grafana user account:/var/lib/grafana:/usr/sbin/nologin
+prometheus:x:987:982:Prometheus user account:/var/lib/prometheus:/sbin/nologin
+setroubleshoot:x:986:981:SELinux troubleshoot server:/var/lib/setroubleshoot:/usr/sbin/nologin
+[root@dns-primary bashscript]# getent passwd | grep -E "^(root|jyoti)" > sample.txt
+[root@dns-primary bashscript]# cat sample.txt
+root:x:0:0:root:/root:/bin/bash
+jyoti:x:1002:1002:jyoti:/home/jyoti:/bin/bas EOF
+flatpak:x:992:989:Flatpak system helper:/:/usr/sbin/nologin
+pinku:x:1001:1001::/home/pinku:/bin/bash
+cockpit-ws:x:991:988:User for cockpit web service:/nonexisting:/sbin/nologin
+dnsmasq:x:990:986:Dnsmasq DHCP and DNS server:/var/lib/dnsmasq:/usr/sbin/nologin
+stapunpriv:x:159:159:systemtap unprivileged user:/var/lib/stapunpriv:/sbin/nologin
+qemu:x:107:107:qemu user:/:/sbin/nologin
+libvirtdbus:x:989:985:Libvirt D-Bus bridge:/:/sbin/nologin
+jyoti:x:1002:1002:jyoti:/home/jyoti:/bin/bash

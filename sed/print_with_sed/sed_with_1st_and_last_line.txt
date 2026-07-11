@@ -1,0 +1,1 @@
+cat -n passwdoutput.txt | sed -n '1,' 

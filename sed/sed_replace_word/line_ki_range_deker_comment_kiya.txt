@@ -1,0 +1,1 @@
+sed '5,8s/^/#/' sample.txt 

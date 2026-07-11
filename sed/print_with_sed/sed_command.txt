@@ -1,0 +1,2 @@
+# sed -n '1p;5p' /etc/passwd
+
