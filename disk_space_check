@@ -1,0 +1,8 @@
+#!/bin/bash
+disk_usage=85
+if [ $disk_usage -ge 80 ]
+then
+	printf " ALERT: Disk  citical hai (%d%%) \n" "$disk_usage"
+else
+	printf "OK: Disk Usage normal hai (%d%%) \n" "$disk_usage"
+fi
